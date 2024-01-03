@@ -8,9 +8,7 @@
   height: 100vh;
   display: flex;
 }
-.temp-shop-one,
-.temp-shop-two,
-.temp-shop-three {
+.temp-shop {
   width: 33%;
   height: 100%;
   display: flex;

@@ -90,7 +90,7 @@ body {
 .footer-icons {
   margin: 0 6px;
 }
-.landing-footer {
+/* .landing-footer {
   min-height: 100px;
   display: flex;
   flex-wrap: wrap;
@@ -106,7 +106,7 @@ body {
   font-size: 20px;
   text-align: center;
   margin: 0;
-}
+} */
 
 /* Body Containers/Divs */
 .white-div {
@@ -147,7 +147,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 /* End of Containers */
 /* Fonts/Words */
 .nav-title {
@@ -198,8 +197,6 @@ body {
   background: url(../imgs/lilAbad.png) center no-repeat;
   background-size: cover;
 }
-
-/* Main Artist Table */
 
 .artist-table-back {
   background: url(../imgs/kaArtists.jpg) center no-repeat;

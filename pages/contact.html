@@ -18,11 +18,11 @@
     <!-- Local Stylesheet -->
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/queries.css" />
-    <link rel="stylesheet" href="../styles/animate.css" />
-    <title>GALLERY</title>
+    <link rel="stylesheet" href="../styles/pageStyles.css" />
+    <title>CONTACT KA2EN</title>
     <link rel="shortcut icon" href="../imgs/favicon.jpg" />
   </head>
-  <body>
+  <body style="overflow-x: hidden">
     <!-- Navbar -->
     <nav class="nav">
       <a href="/pages/home.html">
@@ -35,18 +35,63 @@
         <li><a class="nav-item" href="/pages/home.html">HOME</a></li>
         <li><a class="nav-item" href="/pages/artists.html">ARTISTS</a></li>
         <li>
-          <a class="nav-item active" href="/pages/gallery.html">GALLERY</a>
+          <a class="nav-item" href="/pages/gallery.html">GALLERY</a>
         </li>
         <li>
           <a class="nav-item" href="/pages/releases.html">RELEASES</a>
         </li>
-        <li><a class="nav-item" href="/pages/contact.html">CONTACT</a></li>
+        <li>
+          <a class="nav-item active" href="/pages/contact.html">CONTACT</a>
+        </li>
         <li>
           <a class="nav-item nav-item-shop" href="/pages/shop.html">SHOP</a>
         </li>
       </ul>
     </nav>
     <!-- End of Nav -->
+
+    <!-- Background Video -->
+    <video
+      autoplay
+      loop
+      muted
+      plays-inline
+      class="back-video"
+      style="z-index: -1"
+    >
+      <source src="../imgs/bg-fuzz.mp4" type="video/mp4" />
+    </video>
+
+    <!-- Title -->
+    <div class="small-div">
+      <div class="center-words-cont">
+        <h1 class="large-white">CONTACT KA2EN</h1>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="black-div form-cont" style="background-color: transparent">
+      <div class="center-words-cont">
+        <!-- Name -->
+        <label for="name" class="form-label">NAME</label>
+        <input type="text" class="form-input" id="name" />
+        <!-- Email -->
+        <label for="email" class="form-label">EMAIL ADDRESS</label>
+        <input type="text" class="form-input" id="email" />
+        <!-- Phone number -->
+        <label for="phone" class="form-label">PHONE NUMBER</label>
+        <input type="text" class="form-input" id="phone" />
+        <label for="message" class="form-label">MESSAGE</label>
+        <textarea
+          class="message-box"
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <input type="submit" value="SEND" class="submit-button" />
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -71,7 +116,7 @@
               style="color: red"
             ></i>
           </a>
-          <a href="./pages/contact.html">
+          <a href="/pages/contact.html">
             <i
               class="fa-solid fa-2x fa-envelope footer-icons"
               style="color: white"
