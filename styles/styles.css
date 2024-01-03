@@ -204,7 +204,7 @@ body {
 .artist-table-back {
   background: url(../imgs/kaArtists.jpg) center no-repeat;
   background-size: contain;
-  scale: 1.2;
+  scale: 1;
 }
 
 /* Video Section */
