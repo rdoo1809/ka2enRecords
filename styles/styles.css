@@ -18,17 +18,16 @@ body {
 /* shared styles */
 /* Nav Styles */
 .logo {
-  height: 100px;
-  margin: 20px 10px;
-  border-radius: 10px;
-  border: 1px solid white;
+  height: 140px;
+  margin: 20px auto;
+  display: block;
 }
 .nav {
   height: 140px;
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .nav-list {
@@ -46,25 +45,6 @@ body {
 .nav-item:hover,
 .active {
   color: rgb(13, 110, 253);
-}
-.landing-nav {
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.landing-nav-list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding: 0;
-}
-.landing-nav-item {
-  font-size: 2rem;
-  padding: 0 1rem;
-}
-.landing-nav-item:hover {
-  color: rgba(0, 128, 0, 0.742);
 }
 /* Hamburger Styling */
 .hamburger {
@@ -207,64 +187,26 @@ body {
   width: 33%;
 }
 .first-img {
-  background: url(/imgs/nourByen.jpg) center no-repeat;
+  background: url(../imgs/sudGell.jpeg) center no-repeat;
   background-size: cover;
 }
 .second-img {
-  background: url(/imgs/trzyColors.jpeg) center no-repeat;
+  background: url(../imgs/nourByen.jpg) center no-repeat;
   background-size: cover;
 }
 .third-img {
-  background: url(/imgs/sudGell.jpeg) center no-repeat;
+  background: url(../imgs/lilAbad.png) center no-repeat;
   background-size: cover;
-}
-/* New Artist Showcase */
-.showcase-div {
-  height: 500px;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-.trz-name {
-  color: black;
-  font-size: 8rem;
-}
-.trz-name:hover {
-  color: rgb(13, 110, 253);
 }
 
 /* Main Artist Table */
+
 .artist-table-back {
-  background: url(/imgs/squad.jpeg) center repeat;
-}
-.artist-table {
-  padding-top: 5%;
-  margin: 0;
-}
-.row-one,
-.row-two,
-.row-three {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 150px;
+  background: url(../imgs/kaArtists.jpg) center no-repeat;
+  background-size: contain;
+  scale: 1.2;
 }
 
-.artist-name-main {
-  text-align: center;
-  width: 100%;
-  font-size: 5rem;
-  font-family: "Fjalla One", sans-serif;
-  color: white;
-}
-.artist-name-main:hover {
-  color: rgb(13, 110, 253);
-}
-
-.art-link {
-  text-decoration: none;
-  color: white;
-}
 /* Video Section */
 .home-video-div {
   display: flex;

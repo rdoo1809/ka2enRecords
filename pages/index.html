@@ -9,30 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Press+Start+2P&family=Teko:wght@300&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <!-- Local Styles -->
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- <link rel="stylesheet" href="./styles/styles.css" /> -->
     <title>LANDING PAGE</title>
-    <link rel="shortcut icon" href="./imgs/favicon.jpg" />
+    <link rel="shortcut icon" href="../imgs/favicon.jpg" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="landing-nav">
-      <ul class="landing-nav-list">
-        <li>
-          <a class="nav-item landing-nav-item" href="./home.html">HOME</a>
-        </li>
-        <li>
-          <a class="nav-item landing-nav-item" href="./pages/shop.html">SHOP</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- End of Nav -->
-
     <!-- Background Video -->
-    <div>
-      <video center autoplay loop muted plays-inline class="background-video">
-        <source src="./imgs/landing.mp4" type="video/mp4" />
+    <div class="video-div" onclick="redirectToNextPage()">
+      <video
+        center
+        autoplay
+        loop
+        muted
+        plays-inline
+        class="background-video"
+        preload="auto"
+      >
+        <source src="../imgs/landing.mp4" type="video/mp4" />
       </video>
     </div>
     <!-- End of Background video -->
@@ -40,31 +36,46 @@
     <style>
       .background-video {
         object-fit: cover;
-        height: 70vh;
-        width: 100vw;
+        scale: 1.8;
+      }
+
+      .video-div {
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
       }
     </style>
 
-    <!-- Footer -->
-    <footer class="landing-nav" style="flex-wrap: wrap">
-      <p class="landing-footer-p">
-        INDEPENDENT CREATIVE COLLECTIVE BASED OUT OF CAIRO, EGYPT
-      </p>
-      <p class="landing-footer-p"><strong>&copy</strong>KA2EN RECORDS 2022</p>
-    </footer>
-    <!-- End -->
+    <script>
+      function redirectToNextPage() {
+        // Replace 'nextPage.html' with the actual URL of your next page
+        window.location.href = "home.html";
+      }
+    </script>
 
     <!-- JavaScript and dependencies CDN -->
     <script
       src="https://kit.fontawesome.com/d2c157295a.js"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
       integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
