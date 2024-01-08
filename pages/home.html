@@ -19,15 +19,18 @@
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/queries.css" />
     <link rel="stylesheet" href="../styles/animate.css" />
+    <link rel="stylesheet" href="../styles/jquery.flipster.min.css" />
     <title>KA2EN HOME</title>
     <link rel="shortcut icon" href="../imgs/favicon.jpg" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="nav">
+    <div>
       <a href="../index.html">
         <img class="logo" src="../imgs/logo.jpg" alt="KA2EN Records Logo"
       /></a>
+    </div>
+    <nav class="nav">
       <button class="hamburger" id="hamburger">
         <i class="fas fa-2x fa-bars"></i>
       </button>
@@ -56,9 +59,150 @@
     <!-- Who We Are Section -->
     <div class="small-div" style="margin: 24px 0">
       <div class="center-words-cont">
-        <h1 class="large-white">WHO WE ARE</h1>
+        <h1 class="large-white big-brand">
+          INDEPENDENT RECORD LABEL AND CREATIVE COLLECTIVE
+        </h1>
       </div>
     </div>
+
+    <!-- Cover Flow -->
+    <div class="hero">
+      <div class="carousel">
+        <ul>
+          <li>
+            <img
+              class="albumCov"
+              src="../imgs/releaseIMGS/matafiCov.jpeg"
+              alt="Matafi"
+            />
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=fagEbM5qvCw"
+              target="_blank"
+              ><img
+                class="albumCov"
+                src="../imgs/releaseIMGS/faytakCov.jpeg"
+                alt="Faytak"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/album/78js2kiq60tVIFTrxAwLog?highlight=spotify:track:2YUvWayvjvWRqIWOGptljw"
+              target="_blank"
+              ><img
+                class="albumCov"
+                src="../imgs/releaseIMGS/rozWSautePic.png"
+                alt="Roz W Saute"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/album/10lWyz6dRO5LC7IybMwpZp?highlight=spotify:track:5Y59pWSdYMAtpRwdxF7WTO"
+              target="_blank"
+              ><img
+                class="albumCov"
+                src="../imgs/releaseIMGS/lewisCov.jpeg"
+                alt="Lewis"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/album/1cA4ociqsc3bJ76UYlRknL"
+              target="_blank"
+              ><img
+                class="albumCov"
+                src="../imgs/releaseIMGS/nayzacCov.jpeg"
+                alt="Nayzac"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=_pQwkfhrxx8"
+              target="_blank"
+              ><img
+                class="albumCov"
+                src="../imgs/releaseIMGS/lambaPic.jpeg"
+                alt="Lamba"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=7C60dRoZ6bc"
+              target="_blank"
+              ><img
+                class="albumCov"
+                src="../imgs/releaseIMGS/masa2COVER.jpg"
+                alt="Masa2Altesh"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/album/0kiDW50yh0M7wwIVcpvKAW"
+              target="_blank"
+              ><img
+                class="albumCov"
+                src="../imgs/releaseIMGS/bahrCover.png"
+                alt="Bahr"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/album/0kiDW50yh0M7wwIVcpvKAW"
+              target="_blank"
+              ><img
+                class="albumCov"
+                src="../imgs/releaseIMGS/dawamaCov.png"
+                alt="Dawama"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/album/0kiDW50yh0M7wwIVcpvKAW"
+              target="_blank"
+              ><img
+                class="albumCov"
+                src="../imgs/releaseIMGS/kannas.jpg"
+                alt="Kannas"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://open.spotify.com/album/4z614RVElVlKWrVkcLZIso"
+              target="_blank"
+              ><img
+                class="albumCov"
+                src="../imgs/releaseIMGS/dalmaCov.png"
+                alt="Dalma"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End of cover flow -->
+
+    <!-- Who we are Writing -->
+    <div
+      class="black-div"
+      style="display: flex; justify-content: center; align-items: center"
+    >
+      <div class="center-words-cont">
+        <p class="medium-p" style="line-height: 50px">
+          CONCEPTUALIZED IN 2020 IN CARIO EGYPT, KA2EN IS A COLLECTIVE OF
+          SONGWRITERS, RAPPERS, PRODUCERS, AND VISUAL ARTISTS.
+        </p>
+        <p class="medium-p" style="line-height: 50px; padding: 1rem 0">
+          OUR SOUND MIXES EXPERIMENTAL/BRUTALIST POST-NEW WAVE HIP-HOP AND TRAP
+          SEEPING WITH ELECTRONIC SOUNDS AND DYSFUNCTIONAL ARRANGEMENTS.
+        </p>
+        <p class="medium-p" style="line-height: 50px">
+          AT KA2EN, WE AIM TO CREATE A FRESH, UNIQUE SOUND, NEW TO EGYPTIAN
+          HIP-HOP.
+        </p>
+      </div>
+    </div>
+    <!-- End of Who We Are -->
+
     <!-- Carousel -->
     <div
       id="carouselExampleIndicators"
@@ -96,27 +240,6 @@
       </a>
     </div>
     <!-- End of Carousel -->
-    <!-- Who we are Writing -->
-    <div
-      class="black-div"
-      style="display: flex; justify-content: center; align-items: center"
-    >
-      <div class="center-words-cont">
-        <p class="medium-p" style="line-height: 50px">
-          CONCEPTUALIZED IN 2020 IN CARIO EGYPT, KA2EN IS A COLLECTIVE OF
-          SONGWRITERS, RAPPERS, PRODUCERS, AND VISUAL ARTISTS.
-        </p>
-        <p class="medium-p" style="line-height: 50px; padding: 1rem 0">
-          OUR SOUND MIXES EXPERIMENTAL/BRUTALIST POST-NEW WAVE HIP-HOP AND TRAP
-          SEEPING WITH ELECTRONIC SOUNDS AND DYSFUNCTIONAL ARRANGEMENTS.
-        </p>
-        <p class="medium-p" style="line-height: 50px">
-          AT KA2EN, WE AIM TO CREATE A FRESH, UNIQUE SOUND, NEW TO EGYPTIAN
-          HIP-HOP.
-        </p>
-      </div>
-    </div>
-    <!-- End of Who We Are -->
 
     <!-- Artist Table -->
     <div class="black-div artist-table-back" style="content-visibility: auto">
@@ -192,7 +315,39 @@
     </footer>
     <!-- End -->
 
+    <style>
+      .hero {
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        overflow-x: hidden;
+      }
+
+      .hero .carousel {
+        width: 300px;
+        margin: 100px auto 0;
+        overflow: visible;
+      }
+
+      .carousel img {
+        -webkit-box-reflect: below 20px
+          linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+      }
+    </style>
+
     <!-- JavaScript and dependencies CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../scripts/jquery.flipster.min.js"></script>
+    <script>
+      $(".carousel").flipster({
+        style: "carousel",
+        spacing: -0.3,
+      });
+    </script>
     <script src="../scripts/scripts.js"></script>
     <script
       src="https://kit.fontawesome.com/d2c157295a.js"
