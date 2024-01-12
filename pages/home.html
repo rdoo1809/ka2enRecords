@@ -442,6 +442,45 @@
     </div>
     <!--  -->
 
+    <!--  -->
+    <div class="image-carousel">
+      <img src="image1.jpg" alt="Image 1" />
+      <img src="image2.jpg" alt="Image 2" />
+      <img src="image3.jpg" alt="Image 3" />
+      <img src="image4.jpg" alt="Image 4" />
+    </div>
+
+    <style>
+      .image-carousel {
+        display: flex;
+        transition: transform 0.8s ease-in-out;
+      }
+
+      .image-carousel img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const carousel = document.querySelector(".image-carousel");
+        let currentIndex = 0;
+
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % 4;
+          updateCarousel();
+        }
+
+        function updateCarousel() {
+          const translateValue = -currentIndex * 100 + "%";
+          carousel.style.transform = "translateX(" + translateValue + ")";
+        }
+
+        setInterval(nextSlide, 3000); // Change image every 3 seconds
+      });
+    </script>
+    <!--  -->
+
     <!-- KA2EN Video -->
     <div class="container text-center mx-auto" style="margin-bottom: 2rem">
       <iframe
