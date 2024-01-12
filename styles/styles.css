@@ -45,6 +45,12 @@ body {
   text-align: center;
   background-color: transparent;
   border: 1px solid rgba(0, 128, 0, 0.742);
+  width: 20rem;
+}
+
+.ka-artists {
+  height: 500px;
+  padding: 0 3rem;
 }
 
 .big-brand {
@@ -55,7 +61,7 @@ body {
   height: 60px;
 }
 .brand-long {
-  height: 40px;
+  max-height: 40px;
 }
 /* Cover Flow*/
 .hero {
@@ -83,7 +89,6 @@ body {
 /* Media Scroller */
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
-
 .media-scroller {
   --_spacer: var(--size-3);
   display: grid;
@@ -128,8 +133,12 @@ body {
   .media-scroller {
     grid-auto-columns: 45%; /* Adjust column width for smaller screens */
     overflow-y: hidden;
+    padding: 0 1rem;
   }
   .media-element {
-    margin: 8px; /* Adjust margin for smaller screens */
+    margin: 12px; /* Adjust margin for smaller screens */
+  }
+  .card {
+    width: 100%;
   }
 }
