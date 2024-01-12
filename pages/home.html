@@ -442,41 +442,54 @@
     </div>
     <!--  -->
 
-    <!--  -->
-    <div class="image-carousel">
-      <img src="image1.jpg" alt="Image 1" />
-      <img src="image2.jpg" alt="Image 2" />
-      <img src="image3.jpg" alt="Image 3" />
-      <img src="image4.jpg" alt="Image 4" />
+    <!-- Rotating branding -->
+    <div class="container d-flex align-items-center justify-content-center">
+      <div id="imageContainer">
+        <img
+          src="../imgs/branding/brand5.png"
+          alt="Your Image"
+          class="img-fluid"
+          style="height: 240px"
+        />
+        <img
+          src="../imgs/branding/brand6.png"
+          alt="Your Image"
+          class="img-fluid"
+          style="height: 240px"
+        />
+        <img
+          src="../imgs/branding/brand7.png"
+          alt="Your Image"
+          class="img-fluid"
+          style="height: 240px"
+        />
+        <img
+          src="../imgs/branding/brand8.png"
+          alt="Your Image"
+          class="img-fluid"
+          style="height: 240px"
+        />
+      </div>
     </div>
 
-    <style>
-      .image-carousel {
-        display: flex;
-        transition: transform 0.8s ease-in-out;
-      }
-
-      .image-carousel img {
-        width: 100%;
-        height: auto;
-      }
-    </style>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const carousel = document.querySelector(".image-carousel");
+        const imageContainer = document.getElementById("imageContainer");
         let currentIndex = 0;
 
-        function nextSlide() {
+        function cycleImages() {
           currentIndex = (currentIndex + 1) % 4;
-          updateCarousel();
+          updateImage();
         }
 
-        function updateCarousel() {
-          const translateValue = -currentIndex * 100 + "%";
-          carousel.style.transform = "translateX(" + translateValue + ")";
+        function updateImage() {
+          const images = imageContainer.getElementsByTagName("img");
+          for (let i = 0; i < images.length; i++) {
+            images[i].style.display = i === currentIndex ? "block" : "none";
+          }
         }
 
-        setInterval(nextSlide, 3000); // Change image every 3 seconds
+        setInterval(cycleImages, 400); // Change image every 2 seconds
       });
     </script>
     <!--  -->
