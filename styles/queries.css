@@ -36,4 +36,19 @@
   .hero .carousel {
     margin-top: 60px;
   }
+
+  /* Contact Page */
+  .back-video {
+    width: max-content;
+  }
+  .form-label,
+  .form-input,
+  .message-box {
+    width: 50%;
+  }
+  .submit-button {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+  /* End of Contact Page */
 }
