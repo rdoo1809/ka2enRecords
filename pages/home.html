@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap and fonts Below -->
+    <title>KA2EN RECORDS</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,12 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Press+Start+2P&family=Teko:wght@300&display=swap"
       rel="stylesheet"
     />
-    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="../styles/jquery.flipster.min.css" />
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../styles/queries.css" />
-    <link rel="stylesheet" href="../styles/animate.css" />
-    <link rel="stylesheet" href="../styles/jquery.flipster.min.css" />
-    <title>KA2EN HOME</title>
     <link rel="shortcut icon" href="../imgs/favicon.jpg" />
   </head>
   <body>
@@ -30,45 +28,262 @@
         <img class="logo" src="../imgs/logo.jpg" alt="KA2EN Records Logo"
       /></a>
     </div>
-    <nav class="nav">
-      <button class="hamburger" id="hamburger">
-        <i class="fas fa-2x fa-bars"></i>
-      </button>
-      <ul class="nav-list" id="nav-list">
-        <li><a class="nav-item active" href="#">HOME</a></li>
-        <li><a class="nav-item" href="/pages/artists.html">ARTISTS</a></li>
-        <li><a class="nav-item" href="/pages/gallery.html">GALLERY</a></li>
-        <li>
-          <a class="nav-item" href="/pages/services.html">SERVICES</a>
-        </li>
-        <li><a class="nav-item" href="/pages/contact.html">CONTACT</a></li>
-        <li>
-          <a class="nav-item nav-item-shop" href="/pages/shop.html">SHOP</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa fa-bars" style="color: white"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="color: blue"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ARTISTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >SERVICES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SHOP</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <!-- End of Nav -->
+    <!-- -- -->
 
-    <!-- Image Section -->
-    <div class="black-div home-img-cont">
-      <div class="top-img first-img hidden"></div>
-      <div class="top-img second-img hidden"></div>
-      <div class="top-img third-img hidden"></div>
-    </div>
-
-    <!-- Who We Are Section -->
-    <div class="brand-div" style="margin: 24px 0 0 0">
-      <div class="center-words-cont">
-        <h1 class="large-white big-brand">
-          INDEPENDENT RECORD LABEL AND CREATIVE COLLECTIVE
-        </h1>
+    <!-- Artist Cards -->
+    <div class="media-scroller snaps-inline container">
+      <div class="media-element">
+        <div class="card" style="width: 20rem">
+          <img src="../imgs/kamiHead.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-white">KAMIKAZEM</h5>
+            <p class="card-text text-white">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <div class="artist-page-icons">
+            <a
+              target="_blank"
+              style="color: black"
+              href="https://open.spotify.com/artist/0FAbIDfnnY3RRlj97zPj6h"
+            >
+              <i
+                class="fa-brands fa-1x fa-spotify footer-icons"
+                style="color: rgb(11, 132, 41)"
+              ></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/kamikazem_/">
+              <i
+                class="fa-brands fa-1x fa-instagram footer-icons"
+                style="color: rgb(255, 138, 157)"
+              ></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://music.apple.com/ca/artist/kamikazem/1535642229"
+            >
+              <i
+                class="fa-brands fa-1x fa-apple footer-icons artist-icon"
+                style="color: white"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="media-element">
+        <div class="card" style="width: 20rem">
+          <img src="../imgs/kamiHead.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-white">KAMIKAZEM</h5>
+            <p class="card-text text-white">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <div class="artist-page-icons">
+            <a
+              target="_blank"
+              style="color: black"
+              href="https://open.spotify.com/artist/0FAbIDfnnY3RRlj97zPj6h"
+            >
+              <i
+                class="fa-brands fa-1x fa-spotify footer-icons"
+                style="color: rgb(11, 132, 41)"
+              ></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/kamikazem_/">
+              <i
+                class="fa-brands fa-1x fa-instagram footer-icons"
+                style="color: rgb(255, 138, 157)"
+              ></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://music.apple.com/ca/artist/kamikazem/1535642229"
+            >
+              <i
+                class="fa-brands fa-1x fa-apple footer-icons artist-icon"
+                style="color: white"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="media-element">
+        <div class="card" style="width: 20rem">
+          <img src="../imgs/kamiHead.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-white">KAMIKAZEM</h5>
+            <p class="card-text text-white">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <div class="artist-page-icons">
+            <a
+              target="_blank"
+              style="color: black"
+              href="https://open.spotify.com/artist/0FAbIDfnnY3RRlj97zPj6h"
+            >
+              <i
+                class="fa-brands fa-1x fa-spotify footer-icons"
+                style="color: rgb(11, 132, 41)"
+              ></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/kamikazem_/">
+              <i
+                class="fa-brands fa-1x fa-instagram footer-icons"
+                style="color: rgb(255, 138, 157)"
+              ></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://music.apple.com/ca/artist/kamikazem/1535642229"
+            >
+              <i
+                class="fa-brands fa-1x fa-apple footer-icons artist-icon"
+                style="color: white"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="media-element">
+        <div class="card" style="width: 20rem">
+          <img src="../imgs/kamiHead.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-white">KAMIKAZEM</h5>
+            <p class="card-text text-white">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <div class="artist-page-icons">
+            <a
+              target="_blank"
+              style="color: black"
+              href="https://open.spotify.com/artist/0FAbIDfnnY3RRlj97zPj6h"
+            >
+              <i
+                class="fa-brands fa-1x fa-spotify footer-icons"
+                style="color: rgb(11, 132, 41)"
+              ></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/kamikazem_/">
+              <i
+                class="fa-brands fa-1x fa-instagram footer-icons"
+                style="color: rgb(255, 138, 157)"
+              ></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://music.apple.com/ca/artist/kamikazem/1535642229"
+            >
+              <i
+                class="fa-brands fa-1x fa-apple footer-icons artist-icon"
+                style="color: white"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="media-element">
+        <div class="card" style="width: 20rem">
+          <img src="../imgs/kamiHead.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title text-white">KAMIKAZEM</h5>
+            <p class="card-text text-white">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <div class="artist-page-icons">
+            <a
+              target="_blank"
+              style="color: black"
+              href="https://open.spotify.com/artist/0FAbIDfnnY3RRlj97zPj6h"
+            >
+              <i
+                class="fa-brands fa-1x fa-spotify footer-icons"
+                style="color: rgb(11, 132, 41)"
+              ></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/kamikazem_/">
+              <i
+                class="fa-brands fa-1x fa-instagram footer-icons"
+                style="color: rgb(255, 138, 157)"
+              ></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://music.apple.com/ca/artist/kamikazem/1535642229"
+            >
+              <i
+                class="fa-brands fa-1x fa-apple footer-icons artist-icon"
+                style="color: white"
+              ></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <!--  -->
 
-    <!-- branding container -->
-    <div class="brand-div">
-      <div class="center-words-cont">
+    <!-- Who we are -->
+    <div class="container text-center mx-auto" style="margin-top: 2rem">
+      <h1 class="large-white big-brand">
+        INDEPENDENT RECORD LABEL AND CREATIVE COLLECTIVE
+      </h1>
+      <div style="display: flex; justify-content: center; margin-bottom: 2rem">
         <div>
           <img class="branding" src="../imgs/branding/brand1.png" />
         </div>
@@ -79,52 +294,27 @@
           <img class="branding" src="../imgs/branding/brand2.png" />
         </div>
       </div>
+      <p class="medium-p" style="line-height: 50px">
+        CONCEPTUALIZED IN 2020 IN CARIO EGYPT, KA2EN IS A COLLECTIVE OF
+        SONGWRITERS, RAPPERS, PRODUCERS, AND VISUAL ARTISTS.
+      </p>
+      <p class="medium-p" style="line-height: 50px; margin-bottom: 2rem">
+        OUR SOUND MIXES EXPERIMENTAL/BRUTALIST POST-NEW WAVE HIP-HOP AND TRAP
+        SEEPING WITH ELECTRONIC SOUNDS AND DYSFUNCTIONAL ARRANGEMENTS.
+      </p>
+      <p class="medium-p" style="line-height: 50px">
+        يعرف مشغلو الرسم والطباعة هذا جيدًا ، في الواقع ، جميع المهن التي تتعامل
+        مع عالم الاتصالات لها علاقة مستقرة بهذه الكلمات ، ولكن ما هي؟
+      </p>
+      <p
+        class="medium-p"
+        style="line-height: 50px; padding: 0; margin: 0; font-size: 1.8rem"
+      >
+        إنه بالتأكيد أشهر نص نائب حتى إذا كانت هناك إصدارات مختلفة يمكن تمييزها
+        عن ترتيب تكرار الكلمات اللاتينية.
+      </p>
     </div>
     <!--  -->
-
-    <!-- Who we are Writing -->
-    <div
-      class="med-div"
-      style="display: flex; justify-content: center; align-items: center"
-    >
-      <div class="center-words-cont">
-        <p class="medium-p" style="line-height: 50px">
-          CONCEPTUALIZED IN 2020 IN CARIO EGYPT, KA2EN IS A COLLECTIVE OF
-          SONGWRITERS, RAPPERS, PRODUCERS, AND VISUAL ARTISTS.
-        </p>
-        <p
-          class="medium-p"
-          style="line-height: 50px; padding: 0; margin: 0; font-size: 1.8rem"
-        >
-          OUR SOUND MIXES EXPERIMENTAL/BRUTALIST POST-NEW WAVE HIP-HOP AND TRAP
-          SEEPING WITH ELECTRONIC SOUNDS AND DYSFUNCTIONAL ARRANGEMENTS.
-        </p>
-        <!-- <p class="medium-p" style="line-height: 50px">
-          AT KA2EN, WE AIM TO CREATE A FRESH, UNIQUE SOUND, NEW TO EGYPTIAN
-          HIP-HOP.
-        </p> -->
-      </div>
-    </div>
-    <!-- arabic -->
-    <div
-      class="med-div"
-      style="display: flex; justify-content: center; align-items: center"
-    >
-      <div class="center-words-cont">
-        <p class="medium-p" style="line-height: 50px">
-          يعرف مشغلو الرسم والطباعة هذا جيدًا ، في الواقع ، جميع المهن التي
-          تتعامل مع عالم الاتصالات لها علاقة مستقرة بهذه الكلمات ، ولكن ما هي؟
-        </p>
-        <p
-          class="medium-p"
-          style="line-height: 50px; padding: 0; margin: 0; font-size: 1.8rem"
-        >
-          إنه بالتأكيد أشهر نص نائب حتى إذا كانت هناك إصدارات مختلفة يمكن
-          تمييزها عن ترتيب تكرار الكلمات اللاتينية.
-        </p>
-      </div>
-    </div>
-    <!-- End of Who We Are -->
 
     <!-- Cover Flow -->
     <div class="hero">
@@ -242,78 +432,22 @@
     </div>
     <!-- End of cover flow -->
 
-    <!-- Carousel -->
-    <!-- <div
-      id="carouselExampleIndicators"
-      class="carousel slide local-carousel"
-      data-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../imgs/upmusicvid.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="../imgs/lilbeyn.jpg" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="../imgs/upka2enboys.JPEG" class="d-block w-100" alt="..." />
-        </div>
-      </div>
-      <a
-        class="carousel-control-prev"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div> -->
-    <!-- End of Carousel -->
-
     <!-- branding container -->
-    <div class="brand-div">
-      <div class="center-words-cont">
-        <div>
-          <img class="branding" src="../imgs/branding/brand1.png" />
-        </div>
-        <div>
-          <a href="./artists.html">
-            <img
-              class="branding"
-              src="../imgs/kaArtists.jpg"
-              style="height: 500px; padding: 0 3rem"
-            />
-          </a>
-        </div>
-        <div>
-          <img class="branding" src="../imgs/branding/brand2.png" />
-        </div>
-      </div>
+    <div class="container text-center mx-auto;" style="margin-bottom: 2rem">
+      <img class="branding" src="../imgs/branding/brand1.png" />
+      <a href="./artists.html">
+        <img
+          class="branding"
+          src="../imgs/kaArtists.jpg"
+          style="height: 500px; padding: 0 3rem"
+        />
+      </a>
+      <img class="branding" src="../imgs/branding/brand2.png" />
     </div>
     <!--  -->
 
     <!-- KA2EN Video -->
-    <div
-      class="black-div"
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 60px 0;
-        content-visibility: auto;
-      "
-    >
+    <div class="container text-center mx-auto" style="margin-bottom: 2rem">
       <iframe
         class="main-page-video"
         width="60%"
@@ -325,78 +459,66 @@
         allowfullscreen
       ></iframe>
       <div class="center-words-cont">
-        <p class="white-p">
+        <p class="text-white">
           CHECK OUT OUR INTERVIEW WITH WITH sceneNOISE ABOUT OUR DEBUT ALBUM
           'BAHR'
         </p>
       </div>
     </div>
-    <!-- End of Video Div -->
+    <!-- -->
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="center-words-cont">
-        <p class="white-p" style="padding: 0.5rem 0">
-          INDEPENDENT CREATIVE COLLECTIVE BASED OUT OF CAIRO, EGYPT
-        </p>
-        <section class="icons">
-          <a href="https://www.instagram.com/ka2en_records/" target="_blank">
-            <i
-              class="fa-brands fa-2x fa-instagram footer-icons"
-              style="color: rgb(255, 138, 157)"
-            ></i
-          ></a>
-          <a
-            style="color: black"
-            href="https://www.youtube.com/channel/UCIfzYxAi9JfPTUbblZ0xbUQ?app=desktop"
-            target="_blank"
-          >
-            <i
-              class="fa-brands fa-2x fa-youtube footer-icons"
-              style="color: red"
-            ></i>
-          </a>
-          <a href="/pages/contact.html">
-            <i
-              class="fa-solid fa-2x fa-envelope footer-icons"
-              style="color: white"
-            ></i>
-          </a>
-        </section>
-        <p class="white-p" style="padding: 0.5rem 0">
-          <strong>&copy</strong>KA2EN RECORDS 2020
-        </p>
-      </div>
-    </footer>
+    <div class="container text-center mx-auto">
+      <img class="brand-long" src="../imgs/branding/brand4.png" />
+      <p class="text-white" style="padding: 0.5rem 0">
+        INDEPENDENT CREATIVE COLLECTIVE BASED OUT OF CAIRO, EGYPT
+      </p>
+      <section class="icons">
+        <a href="https://www.instagram.com/ka2en_records/" target="_blank">
+          <i
+            class="fa-brands fa-2x fa-instagram footer-icons"
+            style="color: rgb(255, 138, 157)"
+          ></i
+        ></a>
+        <a
+          style="color: black"
+          href="https://www.youtube.com/channel/UCIfzYxAi9JfPTUbblZ0xbUQ?app=desktop"
+          target="_blank"
+        >
+          <i
+            class="fa-brands fa-2x fa-youtube footer-icons"
+            style="color: red"
+          ></i>
+        </a>
+        <a href="/pages/contact.html">
+          <i
+            class="fa-solid fa-2x fa-envelope footer-icons"
+            style="color: white"
+          ></i>
+        </a>
+      </section>
+      <p class="text-white" style="padding: 0.5rem 0">
+        <strong>&copy</strong>KA2EN RECORDS 2024
+      </p>
+    </div>
     <!-- End -->
-
-    <style>
-      .hero {
-        width: 100%;
-        height: 100vh;
-        background-color: #000;
-        overflow-x: hidden;
-      }
-
-      .hero .carousel {
-        width: 300px;
-        margin: 100px auto 0;
-        overflow: visible;
-      }
-
-      .carousel img {
-        -webkit-box-reflect: below 20px
-          linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
-      }
-    </style>
-
-    <!-- JavaScript and dependencies CDN -->
+    <!-- Scripts below -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://code.jquery.com/jquery-3.6.4.min.js"
       integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
       crossorigin="anonymous"
     ></script>
-    <script src="../scripts/jquery.flipster.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../styles/jquery.flipster.min.js"></script>
     <script>
       $(".carousel").flipster({
         style: "carousel",
@@ -411,11 +533,6 @@
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
       crossorigin="anonymous"
     ></script>
   </body>

@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  background-color: black;
+  font-family: "Fjalla One", sans-serif;
+}
+.home-body {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+/* Keyframes Animation Definition*/
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* shared styles */
+/* Nav Styles */
+.logo {
+  height: 80px;
+  margin: 20px auto;
+  display: block;
+}
+.nav {
+  height: 60px;
+  width: 100%;
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.nav-list {
+  list-style-type: none;
+  justify-content: center;
+}
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0 0.5rem;
+}
+.nav-item:hover,
+.active {
+  color: rgb(13, 110, 253);
+}
+/* Hamburger Styling */
+.hamburger {
+  border: 0;
+  background-color: transparent;
+  color: white;
+  margin-top: -90px;
+}
+.hamburger:focus {
+  outline: none;
+}
+@media only screen and (min-width: 701px) {
+  .hamburger {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    /* justify-content: flex-start; */
+    flex-wrap: wrap;
+    background-color: black;
+    font-size: 12px;
+    margin: auto 0;
+  }
+}
+.nav-list.show {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px 0 5px;
+}
+/* End of Hamburger Styles */
+/* End of Nav */
+/* footer styles */
+.footer {
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons {
+  width: 100%;
+}
+.footer-icons {
+  margin: 0 6px;
+}
+/* .landing-footer {
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+.landing-footer-p {
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+} */
+
+/* Body Containers/Divs */
+.white-div {
+  background-color: white;
+  width: 100%;
+  min-height: 500px;
+}
+.black-div {
+  background-color: black;
+  width: 100%;
+  min-height: 500px;
+}
+.med-div {
+  background-color: black;
+  width: 100%;
+  min-height: 300px;
+}
+.small-div {
+  background-color: black;
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-words-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+.words-cont {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+/* End of Containers */
+/* Fonts/Words */
+.nav-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  color: white;
+}
+.xl-black {
+  font-size: 8rem;
+  color: white;
+  font-weight: 900;
+  margin: 0;
+}
+.large-white {
+  font-size: 6rem;
+  color: white;
+  font-weight: 900;
+  margin: 0;
+}
+.medium-p {
+  color: white;
+  font-size: 2.5rem;
+}
+.white-p {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+}
+/* End of Words/Fonts */
+/* End of Shared Styles */
+/* Homepage Styles */
+.home-img-cont {
+  display: flex;
+}
+.top-img {
+  height: 500px;
+  width: 33%;
+}
+.first-img {
+  background: url(../imgs/sudGell.jpeg) center no-repeat;
+  background-size: cover;
+}
+.second-img {
+  background: url(../imgs/nourByen.jpg) center no-repeat;
+  background-size: cover;
+}
+.third-img {
+  background: url(../imgs/lilAbad.png) center no-repeat;
+  background-size: cover;
+}
+
+.artist-table-back {
+  background: url(../imgs/kaArtists.jpg) center no-repeat;
+  background-size: contain;
+}
+
+/* Video Section */
+.home-video-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* End of Homepage styles */
+
+/* */
+.big-brand {
+  /* font-family: GE MB Najm;
+  color: white; */
+  font-size: 60px;
+}
+
+.branding {
+  height: 60px;
+}
+
+.brand-div {
+  background-color: black;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

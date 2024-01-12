@@ -1,81 +1,24 @@
 body {
   margin: 0;
+  padding: 0;
   background-color: black;
   font-family: "Fjalla One", sans-serif;
 }
-.home-body {
-  animation: 1s ease-out 0s 1 slideInFromLeft;
+
+.nav {
+  background-color: black !important;
 }
-/* Keyframes Animation Definition*/
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+
+.nav .nav-link {
+  color: white !important;
 }
-/* shared styles */
-/* Nav Styles */
+
 .logo {
   height: 80px;
   margin: 20px auto;
   display: block;
 }
-.nav {
-  height: 60px;
-  width: 100%;
-  margin: 0 0 1rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.nav-list {
-  list-style-type: none;
-  justify-content: center;
-}
-.nav-item {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 0 0.5rem;
-}
-.nav-item:hover,
-.active {
-  color: rgb(13, 110, 253);
-}
-/* Hamburger Styling */
-.hamburger {
-  border: 0;
-  background-color: transparent;
-  color: white;
-  margin-top: -90px;
-}
-.hamburger:focus {
-  outline: none;
-}
-@media only screen and (min-width: 701px) {
-  .hamburger {
-    display: none;
-  }
-  .nav-list {
-    display: flex;
-    /* justify-content: flex-start; */
-    flex-wrap: wrap;
-    background-color: black;
-    font-size: 12px;
-    margin: auto 0;
-  }
-}
-.nav-list.show {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 5px 0 5px;
-}
-/* End of Hamburger Styles */
-/* End of Nav */
-/* footer styles */
+
 .footer {
   width: 100%;
   height: 140px;
@@ -89,143 +32,104 @@ body {
 .footer-icons {
   margin: 0 6px;
 }
-/* .landing-footer {
-  min-height: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  right: 0;
-  bottom: 0;
-  position: fixed;
-}
-.landing-footer-p {
-  width: 100%;
-  color: white;
-  font-size: 20px;
-  text-align: center;
-  margin: 0;
-} */
 
-/* Body Containers/Divs */
-.white-div {
-  background-color: white;
+/* Home Styles */
+.card-div-home {
   width: 100%;
-  min-height: 500px;
-}
-.black-div {
-  background-color: black;
-  width: 100%;
-  min-height: 500px;
-}
-.med-div {
-  background-color: black;
-  width: 100%;
-  min-height: 300px;
-}
-.small-div {
-  background-color: black;
-  width: 100%;
-  min-height: 150px;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.center-words-cont {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.card {
   text-align: center;
-  padding: 0 2rem;
+  background-color: transparent;
+  border: 1px solid rgba(0, 128, 0, 0.742);
 }
-.words-cont {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-/* End of Containers */
-/* Fonts/Words */
-.nav-title {
-  font-family: "Press Start 2P", cursive;
-  font-size: 3rem;
+
+.big-brand {
   color: white;
+  font-size: 60px;
 }
-.xl-black {
-  font-size: 8rem;
-  color: white;
-  font-weight: 900;
-  margin: 0;
+.branding {
+  height: 60px;
 }
-.large-white {
-  font-size: 6rem;
-  color: white;
-  font-weight: 900;
-  margin: 0;
+.brand-long {
+  height: 40px;
 }
+/* Cover Flow*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  overflow-x: hidden;
+}
+.hero .carousel {
+  width: 300px;
+  margin: 100px auto 0;
+  overflow: visible;
+}
+.carousel img {
+  -webkit-box-reflect: below 20px
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+/* Fonts/Text */
 .medium-p {
   color: white;
   font-size: 2.5rem;
 }
-.white-p {
-  color: white;
-  font-size: 1.2rem;
-  margin: 0;
-}
-/* End of Words/Fonts */
-/* End of Shared Styles */
-/* Homepage Styles */
-.home-img-cont {
-  display: flex;
-}
-.top-img {
-  height: 500px;
-  width: 33%;
-}
-.first-img {
-  background: url(../imgs/sudGell.jpeg) center no-repeat;
-  background-size: cover;
-}
-.second-img {
-  background: url(../imgs/nourByen.jpg) center no-repeat;
-  background-size: cover;
-}
-.third-img {
-  background: url(../imgs/lilAbad.png) center no-repeat;
-  background-size: cover;
+
+/* Media Scroller */
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+.media-scroller {
+  --_spacer: var(--size-3);
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 28%;
+  padding: 0 var(--_spacer) var(--_spacer);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
 }
 
-.artist-table-back {
-  background: url(../imgs/kaArtists.jpg) center no-repeat;
-  background-size: contain;
+.media-element {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--_spacer);
+  padding: var(--_spacer);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+  margin: 12px;
+}
+.media-element > img {
+  inline-size: 100%;
+  aspect-ratio: 16 / 16;
+  object-fit: cover;
+}
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_spacer, 1rem);
+}
+.snaps-inline > * {
+  scroll-snap-align: start;
 }
 
-/* Video Section */
-.home-video-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* End of Homepage styles */
-
-/* */
-.big-brand {
-  /* font-family: GE MB Najm;
-  color: white; */
-  font-size: 60px;
+.media-element img {
+  max-width: 100%; /* This ensures the image won't exceed its container's width */
+  height: auto; /* Maintain aspect ratio */
 }
 
-.branding {
-  height: 60px;
-}
-
-.brand-div {
-  background-color: black;
-  width: 100%;
-  min-height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Apply additional styles for smaller screens (mobile devices) */
+@media (max-width: 767px) {
+  .media-scroller {
+    grid-auto-columns: 45%; /* Adjust column width for smaller screens */
+    overflow-y: hidden;
+  }
+  .media-element {
+    margin: 8px; /* Adjust margin for smaller screens */
+  }
 }
